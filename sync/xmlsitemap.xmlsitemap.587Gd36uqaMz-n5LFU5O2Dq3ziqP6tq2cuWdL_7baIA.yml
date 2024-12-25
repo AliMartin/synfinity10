@@ -1,0 +1,8 @@
+uuid: dd37065d-6c35-4a22-9fbd-c62d9c461c3c
+langcode: en-gb
+status: true
+dependencies: {  }
+id: 587Gd36uqaMz-n5LFU5O2Dq3ziqP6tq2cuWdL_7baIA
+label: 'https://synfinity10.ddev.site'
+context:
+  language: en-gb

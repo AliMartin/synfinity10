@@ -1,0 +1,114 @@
+.view-video-page {
+  margin-top: 30px;
+  margin-bottom: 90px;
+
+  .views-row {
+    article {
+      border: 1px solid $white;
+      border-radius: 10px;
+    }
+  }
+
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .media--type-remote-video {
+    margin: 0;
+  }
+
+  .media--type-remote-video img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .field--name-name {
+    max-width: 400px;
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+  }
+}
+
+
+.view-testimonials {
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 90px;
+
+    .views-row {
+      background-color: rgba(0,0,0,0.4);
+      width: 406px;
+      padding: 20px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        width: 325px;
+      }
+
+      @media (min-width: 500px) and (max-width: 767px) {
+        width: 406px;
+      }
+
+      @media (max-width: 499px) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 5px;
+      }
+
+      .views-field-title {
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        font-size: xx-large;
+        line-height: 1;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+.view-packages {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .views-row {
+    max-width: 440px;
+    background-color: rgba(0,0,0,0.75);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .views-field-field-teaser {
+    font-weight: $font-weight-bold;
+    font-size: x-large;
+    margin-bottom: 1rem;
+  }
+}

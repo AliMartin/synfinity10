@@ -1,0 +1,24 @@
+uuid: bfe21153-4658-437b-97a4-9a53d62bc2d9
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - filter.format.code
+    - node.type.package
+  module:
+    - text
+id: node.package.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: package
+label: Teaser
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - code
+field_type: text

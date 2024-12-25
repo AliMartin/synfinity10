@@ -1,0 +1,23 @@
+header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand {
+  a.site-title {
+    color: inherit;
+    letter-spacing: inherit;
+    text-transform: lowercase;
+    font-family: $headings-font-family;
+    font-size: 64px;
+    font-weight: $headings-font-weight;
+  }
+}
+
+.navbar-brand {
+  padding: 0;
+}
