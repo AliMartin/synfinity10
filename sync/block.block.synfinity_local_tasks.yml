@@ -9,7 +9,7 @@ _core:
 id: synfinity_local_tasks
 theme: synfinity
 region: content
-weight: -4
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:

@@ -1,23 +1,23 @@
-uuid: f105414e-4a18-4dbe-a9cf-23be78013f1f
+uuid: 28730493-d0c7-4078-a03c-035cee74b7c2
 langcode: en-gb
 status: true
 dependencies:
   content:
-    - 'block_content:basic:6ae72488-25f1-4da6-9f53-f4f6b9e6d9f6'
+    - 'block_content:basic:266692f2-dcd2-4575-adb4-525910457d52'
   module:
     - block_content
     - system
   theme:
     - synfinity
-id: synfinity_curatorfeed
+id: synfinity_videowallpaper
 theme: synfinity
 region: content
-weight: -1
+weight: -8
 provider: null
-plugin: 'block_content:6ae72488-25f1-4da6-9f53-f4f6b9e6d9f6'
+plugin: 'block_content:266692f2-dcd2-4575-adb4-525910457d52'
 settings:
-  id: 'block_content:6ae72488-25f1-4da6-9f53-f4f6b9e6d9f6'
-  label: 'Curator feed'
+  id: 'block_content:266692f2-dcd2-4575-adb4-525910457d52'
+  label: 'Video wallpaper'
   label_display: '0'
   provider: block_content
   status: true
@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /social
+    pages: '<front>'
