@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.colorbox
-    - media.type.remote_video
   module:
     - colorbox
     - media
@@ -263,19 +262,21 @@ display:
           group: 1
           expose:
             operator: ''
-        bundle:
-          id: bundle
+        mid:
+          id: mid
           table: media_field_data
-          field: bundle
+          field: mid
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: media
-          entity_field: bundle
-          plugin_id: bundle
-          operator: in
+          entity_field: mid
+          plugin_id: numeric
+          operator: '='
           value:
-            remote_video: remote_video
+            min: ''
+            max: ''
+            value: '87'
           group: 1
           exposed: false
           expose:
@@ -292,7 +293,9 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''

@@ -137,7 +137,16 @@ ul.nav-tabs {
 }
 
 
+// Video player
+article.media--type-video.media--view-mode-colorbox {
+  border: none !important;
 
+  video {
+    -webkit-box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.61);
+    box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.61);
+  }
+}
 
 
 // Curator feed
