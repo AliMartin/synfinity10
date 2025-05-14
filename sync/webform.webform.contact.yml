@@ -36,16 +36,29 @@ elements: |-
     '#title': 'Step 2'
     '#prev_button_label': Previous
     '#next_button_label': Next
+    type_of_enquiry:
+      '#type': radios
+      '#title': 'Is this a private or corporate enquiry?'
+      '#options':
+        private: Private
+        corporate: Corporate
+      '#required': true
+  step_3:
+    '#type': webform_wizard_page
+    '#title': 'Step 3'
+    '#prev_button_label': Previous
+    '#next_button_label': Next
     email:
       '#type': email
       '#title': Email
       '#title_display': invisible
       '#placeholder': 'What is your email address?'
       '#required': true
+      '#default_value': '[current-user:mail]'
       '#format_items': comma
-  step_3:
+  step_4:
     '#type': webform_wizard_page
-    '#title': 'Step 3'
+    '#title': 'Step 4'
     '#prev_button_label': Previous
     '#next_button_label': Next
     telephone:
@@ -54,26 +67,23 @@ elements: |-
       '#title_display': invisible
       '#placeholder': "What's your telephone number?"
       '#format_items': comma
-  step_4:
-    '#type': webform_wizard_page
-    '#title': 'Step 4'
-    '#prev_button_label': Previous
-    '#next_button_label': Next
-    package:
-      '#type': select
-      '#title': 'Which package are you most interested in?'
-      '#description': '<p><a href="/packages" target="_blank">Click here</a> to open our packages page in a new window, with all our shows and options for you to choose from.</p>'
-      '#options':
-        essentials: 'Essentials (core five-piece band, 90 minute show)'
-        sax_appeal: 'Sax Appeal (band and saxophonist)'
-        full_experience: 'Full Experience (band plus and two dancers)'
-        ultimate: 'Ultimate Show (band, saxophonist, dancers and laser show)'
       '#required': true
   step_5:
     '#type': webform_wizard_page
     '#title': 'Step 5'
     '#prev_button_label': Previous
     '#next_button_label': Next
+    package:
+      '#type': select
+      '#title': 'Which package are you most interested in?'
+      '#description': '<p><a href="/prices" target="_blank">Click here</a> to open our prices in a new window, with all our packages and options for you to choose from.</p>'
+      '#options':
+        essentials: 'The Essentials (private parties up to 150 guests)'
+        saxappeal: 'The Sax Appeal (private parties up to 150 guests)'
+        full: 'The Full Experience (corporate events up to 250 guests)'
+        ultimate: 'The Ultimate Experience (premium events over 250 guests)'
+        custom: Custom
+      '#required': true
     details:
       '#type': textarea
       '#title': Details

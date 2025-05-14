@@ -74,6 +74,8 @@
         "cweagans/composer-patches": "^1.7",
         "desandro/imagesloaded": "3.1.8",
         "desandro/masonry": "3.3.1",
+        "drupal/ai": "^1.0",
+        "drupal/ai_provider_openai": "^1.0",
         "drupal/background_image": "^2.0",
         "drupal/background_image_formatter": "^2.0",
         "drupal/backup_migrate": "^5.0",
@@ -100,6 +102,8 @@
         "drupal/responsive_menu": "^5.0@alpha",
         "drupal/slick": "^3.0",
         "drupal/slick_views": "^3.0",
+        "drupal/tb_megamenu": "^3.0@alpha",
+        "drupal/views_infinite_scroll": "^2.0",
         "drupal/views_slideshow": "^5.0",
         "drupal/webform": "^6.2@RC",
         "drupal/xmlsitemap": "^2.0@beta",
@@ -120,13 +124,14 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
-            "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
             "oomphinc/composer-installers-extender": true,
-            "cweagans/composer-patches": true
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true
         },
         "sort-packages": true
     },

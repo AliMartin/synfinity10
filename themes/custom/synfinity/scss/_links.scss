@@ -1,7 +1,7 @@
 main .region-content a {
-  color: $primary;
+  color: $secondary;
   text-decoration: inherit;
-  border-bottom: 1px solid $primary;
+  border-bottom: 1px solid rgba(0,0,0,0);
   &:hover,
   &:focus {
     color: $secondary;
@@ -10,8 +10,14 @@ main .region-content a {
   }
 }
 
+#show-buttons .menu-btn,
+#promo-video .menu-btn,
+#block-views-blockmenu-gallery-block-1 .menu-btn,
+.block-block-content .field--name-field-link a,
 main .region-content .btn {
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   color: $white;
   background-color: inherit;
   border-bottom: inherit;

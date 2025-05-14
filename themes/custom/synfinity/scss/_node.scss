@@ -49,6 +49,7 @@ ul.nav-tabs {
 
 // General article pages
 .page-node-type-article,
+.page-node-type-news,
 .page-node-type-testimonial,
 .page-node-type-landing-page {
   main {
@@ -59,6 +60,11 @@ ul.nav-tabs {
       background-color: rgba(0,0,0,0.75);
       padding: 30px;
       border-radius: 20px;
+
+      .field--name-field-teaser {
+        font-weight: $font-weight-bold;
+        font-size: x-large;
+      }
 
       img {
         border-radius: $border-radius;
@@ -150,7 +156,8 @@ article.media--type-video.media--view-mode-colorbox {
 
 
 // Curator feed
-#block-synfinity-curatorfeed {
+#block-synfinity-curatorfeed,
+#block-synfinity-curatorfeed-2 {
   margin-top: 30px;
   margin-bottom: 90px;
 
@@ -217,4 +224,12 @@ article.media--type-video.media--view-mode-colorbox {
       display: none;
     }
   }
+}
+
+
+/* Enquiry menu 2 */
+#block-synfinity-enquirymenu-2 {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 60px 0;
 }

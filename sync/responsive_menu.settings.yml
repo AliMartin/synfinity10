@@ -1,8 +1,8 @@
 _core:
   default_config_hash: kUfdaDqrL0H8TAdz_cSMrTs0_vev13ZXDGUJjcvqx9E
-horizontal_menu: main
+horizontal_menu: sidebar
 horizontal_depth: 9
-off_canvas_menus: main
+off_canvas_menus: sidebar
 horizontal_wrapping_element: nav
 horizontal_breakpoint: wide
 horizontal_media_query: '(min-width: 960px)'

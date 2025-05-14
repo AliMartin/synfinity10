@@ -11,7 +11,7 @@ _core:
 id: synfinity_messages
 theme: synfinity
 region: content
-weight: -7
+weight: -15
 provider: null
 plugin: system_messages_block
 settings:

@@ -369,7 +369,7 @@ display:
       menu:
         type: normal
         title: Testimonials
-        weight: -48
+        weight: -49
         enabled: false
         menu_name: main
         parent: ''

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.media.view_thumbnail
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_promoted
     - image.style.view_thumbnail
     - media.type.image
   module:
@@ -29,6 +30,7 @@ content:
     region: content
 hidden:
   created: true
+  field_promoted: true
   langcode: true
   name: true
   thumbnail: true

@@ -8,8 +8,8 @@ dependencies:
     - synfinity
 id: synfinity_responsivemenumobileicon
 theme: synfinity
-region: nav_main
-weight: -5
+region: nav_additional
+weight: -8
 provider: null
 plugin: responsive_menu_toggle
 settings:

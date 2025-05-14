@@ -12,6 +12,7 @@ ckeditor5-stylesheets:
 regions:
   header: Header
   nav_branding: 'Navigation branding region'
+  upper_cta: 'Upper CTA'
   nav_main: 'Main navigation region'
   nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
   breadcrumb: Breadcrumbs
@@ -19,7 +20,9 @@ regions:
   content: 'Main content'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
+  lower_cta: 'Lower CTA'
   logos: Logos
   footer: Footer
+  hidden_blocks: 'Hidden blocks for TB Mega Menu'
 libraries-override:
   bootstrap5/global-styling: false

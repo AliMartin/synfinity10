@@ -10,8 +10,8 @@ dependencies:
     - synfinity
 id: synfinity_enquirymenu
 theme: synfinity
-region: nav_main
-weight: -6
+region: upper_cta
+weight: -8
 provider: null
 plugin: 'block_content:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
 settings:

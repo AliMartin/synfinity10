@@ -12,7 +12,7 @@ dependencies:
 id: synfinity_videowallpaper
 theme: synfinity
 region: content
-weight: -8
+weight: -16
 provider: null
 plugin: 'block_content:266692f2-dcd2-4575-adb4-525910457d52'
 settings:

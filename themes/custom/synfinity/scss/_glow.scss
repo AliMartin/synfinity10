@@ -11,7 +11,9 @@
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:focus,
-h1 { 
+h1,
+#block-synfinity-mainnavigation h2,
+#block-synfinity-mainnavigation .h2 { 
   text-align: center;
   font-family: $headings-font-family;
   font-weight: 200;

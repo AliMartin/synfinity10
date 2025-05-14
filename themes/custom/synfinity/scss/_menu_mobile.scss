@@ -1,6 +1,14 @@
+/*
 @media only screen and (min-width : 1199px) {
   #block-synfinity-responsivemenumobileicon {
     display: none;
+  }
+}
+*/
+
+body.mm-wrapper_opening {
+  .responsive-menu-toggle-icon {
+    background-color: $secondary;
   }
 }
 
@@ -17,6 +25,11 @@
     height: 38px;
     border: 1px solid $white;
     border-radius: 50%;
+  }
+
+  .responsive-menu-toggle-icon:hover,
+  .responsive-menu-toggle-icon:active {
+    background-color: $secondary;
   }
 
   .responsive-menu-toggle-icon::before,

@@ -1,10 +1,9 @@
-uuid: bfe21153-4658-437b-97a4-9a53d62bc2d9
+uuid: 492aacf3-5290-4a0c-a973-d8fa0ef1fa5a
 langcode: en-gb
 status: true
 dependencies:
   config:
     - field.storage.node.field_teaser
-    - filter.format.code
     - node.type.package
   module:
     - text
@@ -14,11 +13,10 @@ entity_type: node
 bundle: package
 label: Teaser
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  allowed_formats:
-    - code
-field_type: text
+  allowed_formats: {  }
+field_type: text_long
