@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.multimedia.body
+    - field.field.node.multimedia.field_metatags
     - node.type.multimedia
   module:
+    - metatag
     - text
     - user
 id: node.multimedia.default
@@ -19,6 +21,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
     region: content
   links:
     settings: {  }

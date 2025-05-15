@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.node.news.body
     - field.field.node.news.field_image
+    - field.field.node.news.field_metatags
     - field.field.node.news.field_teaser
     - node.type.news
   module:
+    - metatag
     - text
     - user
 id: node.news.default
@@ -30,6 +32,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_teaser:
     type: text_default

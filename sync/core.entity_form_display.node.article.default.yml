@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_attachments
     - field.field.node.article.field_image
+    - field.field.node.article.field_metatags
     - field.field.node.article.field_tags
     - node.type.article
   module:
     - file
     - media_library
+    - metatag
     - path
     - text
 _core:
@@ -49,6 +51,14 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_metatags:
+    type: metatag_firehose
+    weight: 26
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
