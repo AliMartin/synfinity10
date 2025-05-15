@@ -396,6 +396,7 @@ display:
       menu:
         type: normal
         title: News
+        weight: -44
         menu_name: sidebar
         parent: ''
     cache_metadata:
