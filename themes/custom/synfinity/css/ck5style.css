@@ -12777,6 +12777,43 @@ a > .ck-content code {
   justify-content: center;
   padding: 30px 0 60px 0;
 }
+.ck-content .ui-accordion {
+  margin-bottom: 60px;
+}
+.ck-content .ui-accordion .ui-accordion-header {
+  margin: 10px 0 0 0;
+  font-size: 38px;
+}
+.ck-content .ui-accordion .ui-widget-content {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 200;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  border: 1px solid #FF007F;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+.ck-content .ui-state-default,
+.ck-content .ui-widget-content .ui-state-default,
+.ck-content .ui-widget-header .ui-state-default,
+.ck-content .ui-button,
+.ck-content html .ui-button.ui-state-disabled:hover,
+.ck-content html .ui-button.ui-state-disabled:active {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 15px;
+}
+.ck-content .ui-state-active,
+.ck-content .ui-widget-content .ui-state-active,
+.ck-content .ui-widget-header .ui-state-active,
+.ck-content a.ui-button:active,
+.ck-content .ui-button:active,
+.ck-content .ui-button.ui-state-active:hover {
+  border: 1px solid #FF007F;
+  background: #FF007F;
+  color: #ffffff;
+}
 .ck-content .node-45.page-node-type-multimedia main .region-content {
   text-align: left;
   max-width: inherit;

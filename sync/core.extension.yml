@@ -23,6 +23,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  faqfield: 0
   field: 0
   field_ui: 0
   file: 0
@@ -34,6 +35,8 @@ module:
   image: 0
   inline_entity_form: 0
   insert_view: 0
+  jquery_ui: 0
+  jquery_ui_accordion: 0
   key: 0
   language: 0
   layout_builder: 0

@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_attachments
+    - field.field.node.article.field_faqs
     - field.field.node.article.field_image
     - field.field.node.article.field_metatags
     - field.field.node.article.field_tags
     - node.type.article
   module:
+    - faqfield
     - file
     - media_library
     - metatag
@@ -34,16 +36,32 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   field_attachments:
     type: file_generic
-    weight: 3
+    weight: 4
     region: content
     settings:
       progress_indicator: throbber
+    third_party_settings: {  }
+  field_faqs:
+    type: faqfield_default
+    weight: 3
+    region: content
+    settings:
+      answer_widget: text_format
+      question_title: Question
+      answer_title: Answer
+      question_field_required: false
+      answer_field_required: false
+      advanced:
+        question_length: 255
+        question_size: 100
+        question_rows: 0
+        answer_rows: 3
     third_party_settings: {  }
   field_image:
     type: media_library_widget
@@ -54,7 +72,7 @@ content:
     third_party_settings: {  }
   field_metatags:
     type: metatag_firehose
-    weight: 26
+    weight: 13
     region: content
     settings:
       sidebar: true
@@ -62,7 +80,7 @@ content:
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 5
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
@@ -72,34 +90,34 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 4
+    weight: 5
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 8
+    weight: 9
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 11
+    weight: 12
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 9
+    weight: 10
     region: content
     settings:
       display_label: true
@@ -114,7 +132,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS
