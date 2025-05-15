@@ -96,7 +96,7 @@
         "drupal/insert_view": "^2.1",
         "drupal/jquery_ui": "^1.6",
         "drupal/media_entity_soundcloud": "^3.1",
-        "drupal/metatag": "^2.0",
+        "drupal/metatag": "^2.1",
         "drupal/pathauto": "^1.12",
         "drupal/responsive_favicons": "^2.0",
         "drupal/responsive_menu": "^5.0@alpha",
