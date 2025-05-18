@@ -23,6 +23,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_clone: 0
   faqfield: 0
   field: 0
   field_ui: 0
@@ -58,6 +59,17 @@ module:
   responsive_favicons: 0
   responsive_image: 0
   responsive_menu: 0
+  schema_article: 0
+  schema_article_example: 0
+  schema_event: 0
+  schema_metatag: 0
+  schema_organization: 0
+  schema_person: 0
+  schema_product: 0
+  schema_qa_page: 0
+  schema_video_object: 0
+  schema_web_page: 0
+  schema_web_site: 0
   search: 0
   shortcut: 0
   slick: 0
