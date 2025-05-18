@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.news.body
     - field.field.node.news.field_image
     - field.field.node.news.field_metatags
+    - field.field.node.news.field_tags
     - field.field.node.news.field_teaser
     - node.type.news
   module:
@@ -39,6 +40,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 5
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_teaser:
     type: text_default

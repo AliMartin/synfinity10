@@ -13615,7 +13615,8 @@ ul.nav-tabs a:hover, .media-library-view--widget ul.view-header a:hover, ul.nav-
 .page-node-type-article main .region-content,
 .page-node-type-news main .region-content,
 .page-node-type-testimonial main .region-content,
-.page-node-type-landing-page main .region-content {
+.page-node-type-landing-page main .region-content,
+.path-taxonomy main .region-content {
   text-align: center;
   max-width: 850px;
   margin: 20vh auto 90px auto;
@@ -13626,16 +13627,25 @@ ul.nav-tabs a:hover, .media-library-view--widget ul.view-header a:hover, ul.nav-
 .page-node-type-article main .region-content .field--name-field-teaser,
 .page-node-type-news main .region-content .field--name-field-teaser,
 .page-node-type-testimonial main .region-content .field--name-field-teaser,
-.page-node-type-landing-page main .region-content .field--name-field-teaser {
+.page-node-type-landing-page main .region-content .field--name-field-teaser,
+.path-taxonomy main .region-content .field--name-field-teaser {
   font-weight: 400;
   font-size: x-large;
 }
 .page-node-type-article main .region-content img,
 .page-node-type-news main .region-content img,
 .page-node-type-testimonial main .region-content img,
-.page-node-type-landing-page main .region-content img {
+.page-node-type-landing-page main .region-content img,
+.path-taxonomy main .region-content img {
   border-radius: 7px;
   margin-bottom: 1rem;
+}
+.page-node-type-article main .region-content article .node__content .field--name-body,
+.page-node-type-news main .region-content article .node__content .field--name-body,
+.page-node-type-testimonial main .region-content article .node__content .field--name-body,
+.page-node-type-landing-page main .region-content article .node__content .field--name-body,
+.path-taxonomy main .region-content article .node__content .field--name-body {
+  margin-bottom: 60px;
 }
 
 .tint {
@@ -13764,11 +13774,41 @@ article.media--type-video.media--view-mode-colorbox video {
   display: none;
 }
 
+/* Tags */
+main .region-content .field--name-field-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 0 0 30px 0;
+}
+main .region-content .field--name-field-tags a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+main .region-content .field--name-field-tags a:hover {
+  color: #FF007F;
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+/* Watch promo video */
+#block-synfinity-watchpromovideo {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 30px 0;
+}
+
 /* Enquiry menu 2 */
 #block-synfinity-enquirymenu-2 {
   display: flex;
   justify-content: center;
-  padding: 30px 0 60px 0;
+  padding: 0 0 60px 0;
 }
 
 .ui-accordion {
