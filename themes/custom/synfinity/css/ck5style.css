@@ -12053,15 +12053,15 @@ a > .ck-content code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
   margin-bottom: 20px;
 }
 .ck-content #footer-links a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   text-decoration: none;
   color: #ffffff;
   border: 1px solid #ffffff;
@@ -12073,6 +12073,9 @@ a > .ck-content code {
 .ck-content #footer-links a:hover, .ck-content #footer-links a:focus, .ck-content #footer-links a:active {
   color: #ffffff;
   background-color: #FF007F;
+}
+.ck-content #footer-links i {
+  font-size: 18px;
 }
 .ck-content #footer-text-links {
   margin-bottom: 60px;
