@@ -12,7 +12,7 @@ dependencies:
 id: synfinity_webform
 theme: synfinity
 region: content
-weight: -9
+weight: -10
 provider: null
 plugin: webform_block
 settings:

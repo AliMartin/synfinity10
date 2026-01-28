@@ -9,7 +9,7 @@ dependencies:
 id: synfinity_backgroundimage
 theme: synfinity
 region: background_image
-weight: 0
+weight: -16
 provider: null
 plugin: background_image
 settings:

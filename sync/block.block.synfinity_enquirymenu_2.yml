@@ -12,7 +12,7 @@ dependencies:
 id: synfinity_enquirymenu_2
 theme: synfinity
 region: content
-weight: -4
+weight: -5
 provider: null
 plugin: 'block_content:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
 settings:

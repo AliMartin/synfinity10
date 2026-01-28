@@ -1,15 +1,15 @@
-uuid: 35bf59e0-e076-4f83-a3d9-00f30f722093
+uuid: 28004d60-cf18-4cf5-a19e-627f28865785
 langcode: en-gb
 status: true
 dependencies:
   theme:
-    - synfinity
+    - gin
 _core:
-  default_config_hash: qUi7HeT9kqHTcIKDmGO82Fb1X1Gib12zvL8QIcbLy6g
-id: synfinity_page_title
-theme: synfinity
-region: content
-weight: -15
+  default_config_hash: HLQY2xgby8K3vN_98hiOSasOhm9pdCsH234-s0duJ8Q
+id: gin_page_title
+theme: gin
+region: header
+weight: -30
 provider: null
 plugin: page_title_block
 settings:

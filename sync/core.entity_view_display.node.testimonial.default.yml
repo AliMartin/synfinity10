@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.testimonial.body
-    - field.field.node.testimonial.field_image
+    - field.field.node.testimonial.field_logo
     - field.field.node.testimonial.field_venue
+    - image.style.logo
     - node.type.testimonial
   module:
+    - image
     - text
     - user
 id: node.testimonial.default
@@ -22,12 +24,14 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_image:
-    type: entity_reference_entity_view
+  field_logo:
+    type: image
     label: hidden
     settings:
-      view_mode: full
-      link: false
+      image_link: ''
+      image_style: logo
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content

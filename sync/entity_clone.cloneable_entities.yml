@@ -1,3 +1,7 @@
 cloneable_entities:
   - node
   - linkit_profile
+  - ai_prompt_type
+  - ai_prompt
+  - crop_type
+  - crop

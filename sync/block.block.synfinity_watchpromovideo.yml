@@ -12,7 +12,7 @@ dependencies:
 id: synfinity_watchpromovideo
 theme: synfinity
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: 'block_content:198f1543-2589-483e-b5de-0fdd083b1ce7'
 settings:

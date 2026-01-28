@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.testimonial.body
-    - field.field.node.testimonial.field_image
+    - field.field.node.testimonial.field_logo
     - field.field.node.testimonial.field_venue
     - node.type.testimonial
   module:
@@ -30,6 +30,6 @@ content:
     weight: 100
     region: content
 hidden:
-  field_image: true
+  field_logo: true
   field_venue: true
   langcode: true

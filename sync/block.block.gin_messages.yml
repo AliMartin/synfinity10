@@ -1,22 +1,22 @@
-uuid: 585ae29d-594f-4e3c-97b6-0cd7aa52bd83
+uuid: 53ec834a-28e0-4600-b4a7-8e3d042b3b63
 langcode: en-gb
 status: true
 dependencies:
   module:
     - system
   theme:
-    - synfinity
+    - gin
 _core:
-  default_config_hash: MpwGsjE1_EQFEdX_OwS1I5Z0R3JQCBMNqlvJn8p-rcE
-id: synfinity_messages
-theme: synfinity
-region: content
-weight: -16
+  default_config_hash: WvPhI8OwllG0gE69-F8qL3ai3nd5SbYD6JpmEuZcyok
+id: gin_messages
+theme: gin
+region: highlighted
+weight: 0
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: Messages
+  label: 'Status messages'
   label_display: '0'
   provider: system
 visibility: {  }

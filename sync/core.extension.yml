@@ -1,6 +1,8 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
+  admin_toolbar: 0
+  admin_toolbar_tools: 0
   ai: 0
   ai_ckeditor: 0
   ai_provider_openai: 0
@@ -19,6 +21,7 @@ module:
   colorbox_media_video: 0
   config: 0
   contextual: 0
+  crop: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
@@ -34,6 +37,7 @@ module:
   history: 0
   honeypot: 0
   image: 0
+  image_widget_crop: 0
   inline_entity_form: 0
   insert_view: 0
   jquery_ui: 0
@@ -51,7 +55,6 @@ module:
   menu_ui: 0
   metatag: 0
   mysql: 0
-  navigation: 0
   node: 0
   options: 0
   page_cache: 0
@@ -81,6 +84,7 @@ module:
   tb_megamenu: 0
   text: 0
   token: 0
+  toolbar: 0
   update: 0
   user: 0
   views_infinite_scroll: 0
@@ -98,4 +102,5 @@ theme:
   stable9: 0
   bootstrap5: 0
   synfinity: 0
+  gin: 0
 profile: standard

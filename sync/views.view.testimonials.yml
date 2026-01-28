@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_image
+    - field.storage.node.field_logo
+    - image.style.logo
     - node.type.testimonial
-    - system.menu.main
+    - system.menu.sidebar
   module:
+    - image
     - node
     - text
     - user
@@ -27,10 +29,10 @@ display:
     display_options:
       title: Testimonials
       fields:
-        field_image:
-          id: field_image
-          table: node__field_image
-          field: field_image
+        field_logo:
+          id: field_logo
+          table: node__field_logo
+          field: field_logo
           relationship: none
           group_type: group
           admin_label: ''
@@ -77,10 +79,13 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_entity_view
+          type: image
           settings:
-            view_mode: view_thumbnail
-          group_column: target_id
+            image_link: ''
+            image_style: logo
+            image_loading:
+              attribute: lazy
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -332,6 +337,45 @@ display:
           plugin_id: bundle
           value:
             testimonial: testimonial
+        body_value:
+          id: body_value
+          table: node__body
+          field: body_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: string
+          operator: 'not empty'
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: default
       row:
@@ -357,7 +401,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_logo'
   page_1:
     id: page_1
     display_title: Page
@@ -369,10 +413,12 @@ display:
       menu:
         type: normal
         title: Testimonials
-        weight: -49
-        enabled: false
-        menu_name: main
+        description: ''
+        weight: -42
+        expanded: false
+        menu_name: sidebar
         parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -382,4 +428,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_logo'
