@@ -12971,6 +12971,9 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 footer .region-footer {
   display: flex;
@@ -13085,6 +13088,9 @@ header {
   padding-bottom: 5px;
   margin-bottom: 15px;
   background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 #block-synfinity-branding {
@@ -13626,6 +13632,10 @@ ul.nav-tabs a:hover, .media-library-view--widget ul.view-header a:hover, ul.nav-
   background-color: rgba(0, 0, 0, 0.75);
   padding: 30px;
   border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.3);
 }
 .page-node-type-article main .region-content .field--name-field-teaser,
 .page-node-type-news main .region-content .field--name-field-teaser,
@@ -13649,6 +13659,10 @@ ul.nav-tabs a:hover, .media-library-view--widget ul.view-header a:hover, ul.nav-
 .page-node-type-landing-page main .region-content article .node__content .field--name-body,
 .path-taxonomy main .region-content article .node__content .field--name-body {
   margin-bottom: 60px;
+}
+
+.page-node-type-testimonial main .region-content {
+  max-width: 600px;
 }
 
 .tint {
@@ -13722,7 +13736,7 @@ article.media--type-video.media--view-mode-colorbox video {
 }
 #block-synfinity-curatorfeed article > div,
 #block-synfinity-curatorfeed-2 article > div {
-  border: 1px solid #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
   border-radius: 10px;
 }
 #block-synfinity-curatorfeed article .crt-image,
@@ -14842,6 +14856,10 @@ video {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .view-testimonials .view-content .views-row {
@@ -14872,6 +14890,20 @@ video {
 }
 .view-testimonials .view-content .views-row p {
   margin: 0;
+}
+
+.view-previous-clients-and-venues .view-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 90px;
+}
+.view-previous-clients-and-venues .view-content img {
+  width: 200px;
+  height: auto;
+  border-radius: 7px;
 }
 
 .view-packages {

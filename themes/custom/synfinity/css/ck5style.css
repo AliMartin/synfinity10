@@ -12027,6 +12027,9 @@ a > .ck-content code {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 .ck-content footer .region-footer {
   display: flex;
@@ -12134,6 +12137,9 @@ a > .ck-content code {
   padding-bottom: 5px;
   margin-bottom: 15px;
   background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 .ck-content #block-synfinity-branding {
   display: flex;
@@ -12645,6 +12651,10 @@ a > .ck-content code {
   background-color: rgba(0, 0, 0, 0.75);
   padding: 30px;
   border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.3);
 }
 .ck-content .page-node-type-article main .region-content .field--name-field-teaser,
 .ck-content .page-node-type-news main .region-content .field--name-field-teaser,
@@ -12668,6 +12678,9 @@ a > .ck-content code {
 .ck-content .page-node-type-landing-page main .region-content article .node__content .field--name-body,
 .ck-content .path-taxonomy main .region-content article .node__content .field--name-body {
   margin-bottom: 60px;
+}
+.ck-content .page-node-type-testimonial main .region-content {
+  max-width: 600px;
 }
 .ck-content .tint {
   text-align: center;
@@ -12733,7 +12746,7 @@ a > .ck-content code {
 }
 .ck-content #block-synfinity-curatorfeed article > div,
 .ck-content #block-synfinity-curatorfeed-2 article > div {
-  border: 1px solid #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
   border-radius: 10px;
 }
 .ck-content #block-synfinity-curatorfeed article .crt-image,
@@ -13714,6 +13727,10 @@ a > .ck-content code {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .ck-content .view-testimonials .view-content .views-row {
@@ -13744,6 +13761,19 @@ a > .ck-content code {
 }
 .ck-content .view-testimonials .view-content .views-row p {
   margin: 0;
+}
+.ck-content .view-previous-clients-and-venues .view-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 90px;
+}
+.ck-content .view-previous-clients-and-venues .view-content img {
+  width: 200px;
+  height: auto;
+  border-radius: 7px;
 }
 .ck-content .view-packages {
   margin-top: 30px;

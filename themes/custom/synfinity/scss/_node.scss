@@ -62,6 +62,12 @@ ul.nav-tabs {
       padding: 30px;
       border-radius: 20px;
 
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.3);
+
+
       .field--name-field-teaser {
         font-weight: $font-weight-bold;
         font-size: x-large;
@@ -78,6 +84,17 @@ ul.nav-tabs {
     }
   }
 }
+
+
+// Testimonial overrides
+.page-node-type-testimonial {
+  main {
+    .region-content {
+      max-width: 600px;
+    }
+  }
+}
+
 
 
 // Tints
@@ -177,7 +194,7 @@ article.media--type-video.media--view-mode-colorbox {
     border-width: inherit;
 
     > div {
-      border: 1px solid $white !important;
+      border: 1px solid rgba(255, 255, 255, 0.25) !important;
       border-radius: 10px;
     }
 
