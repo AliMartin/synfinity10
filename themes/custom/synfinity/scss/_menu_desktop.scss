@@ -99,6 +99,7 @@ body:has(.tbm-item.level-1.open) {
   // Structure
   .tb-dropdown-inner {
     position: relative;
+    z-index: 999;
     top: 30px;
     background-color: rgba(0, 0, 0, 0.85);
     color: $white;
